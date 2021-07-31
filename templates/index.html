@@ -35,6 +35,27 @@
                                 </a>
                             </li>
                         {% endfor %}
+                        {% if config.extra.email %}
+                        <li class="nav">
+                            <a itemprop="url" href="mailto:{{ config.extra.email }}">
+                                <img class="icon" src="{{ config.base_url }}/icons/email.svg" alt="Mail">
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if config.extra.rss %}
+                        <li class="nav">
+                            <a itemprop="url" href="{{ config.extra.rss }}">
+                                <img class="icon" src="{{ config.base_url }}/icons/rss.svg" alt="RSS">
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if config.extra.sourcehut %}
+                        <li class="nav">
+                            <a itemprop="url" href="https://git.sr.ht/~{{ config.extra.sourcehut }}">
+                                <img class="icon" src="{{ config.base_url }}/icons/sourcehut.svg" alt="SourceHut">
+                            </a>
+                        </li>
+                        {% endif %}
                         {% if config.extra.github %}
                         <li class="nav">
                             <a itemprop="url" href="https://github.com/{{ config.extra.github }}">
@@ -42,10 +63,10 @@
                             </a>
                         </li>
                         {% endif %}
-                        {% if config.extra.twitter %}
+                        {% if config.extra.pgp %}
                         <li class="nav">
-                            <a itemprop="url" href="https://twitter.com/{{ config.extra.twitter }}">
-                                <img class="icon" src="{{ config.base_url }}/icons/twitter.svg" alt="Github">
+                            <a itemprop="url" href="{{ config.extra.pgp }}">
+                                <img class="icon" src="{{ config.base_url }}/icons/pgp.svg" alt="PGP">
                             </a>
                         </li>
                         {% endif %}
