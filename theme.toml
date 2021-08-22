@@ -1,12 +1,11 @@
-name = "Oceanic Zen"
-description = "Minimalistic blog theme"
+name = "Gruvbox Zen"
+description = "Minimalistic gruvbox blog theme"
 license = "MIT"
-homepage = "https://github.com/barlog-m/oceanic-zen"
+homepage = "https://github.com/bhigginsuk/gruvbox-zen"
 min_version = "0.12.0"
-demo = "https://oceanic-zen.netlify.app"
 
 [extra]
 
 [author]
-name = "Barlog M."
-homepage = "https://barlog.li"
+name = "Benjamin Higgins"
+homepage = "https://www.brhiggins.com/"

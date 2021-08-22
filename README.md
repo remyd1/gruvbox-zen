@@ -1,10 +1,12 @@
-# Oceanic Zen
+# Gruvbox Zen
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e90897e9-f3e3-4906-b647-11a918af3a3b/deploy-status)](https://app.netlify.com/sites/oceanic-zen/deploys)
+A [Zola](https://www.getzola.org/) theme forked from [Oceanic
+Zen](https://github.com/bhigginsuk/gruvbox-zen).
 
-Oceanic Zen is a theme for [Zola](https://www.getzola.org/) static site generator
-
-[Oceanic Zen](https://oceanic-zen.netlify.app/) is a minimalistic theme for personal blog.
+## Changes
+- Updated colours, sourced from the [gruvbox theme](https://github.com/morhetz/gruvbox).
+- Removed included font, system font should be used instead
+- Added some extra social icons
 
 ![Screenshot](screenshot-index.png)
 ![Screenshot](screenshot.png)
@@ -15,19 +17,19 @@ Download theme to your `themes` directory:
 
 ```bash
 $ cd themes
-$ git clone https://github.com/barlog-m/oceanic-zen.git
+$ git clone https://github.com/bhigginsuk/gruvbox-zen.git
 ```
 
 Or add as git submodule
 
 ```bash
-$ git submodule add https://github.com/barlog-m/oceanic-zen.git themes/oceanic-zen
+$ git submodule add https://github.com/bhigginsuk/gruvbox-zen.git themes/gruvbox-zen
 ```
 
 Enable it in your `config.toml`:
 
 ```toml
-theme = "oceanic-zen"
+theme = "gruvbox-zen"
 ```
 
 ## Options
@@ -39,6 +41,8 @@ Theme supported some extra options
 author = "blog author name"
 github = "github author name"
 twitter = "twitter author name"
+sourcehut = "sourcehut author name"
+email = "author email address"
+rss = "RSS file name (atom.xml by default)"
+pgp = "PGP key file name"
 ```
-
-Font [Iosevka](https://typeof.net/Iosevka/)

@@ -9,6 +9,5 @@ highlight_code = true
 highlight_theme = "gruvbox-dark"
 
 [extra]
-author = "Barlog M."
-github = "barlog-m"
-twitter = "barlog_m"
+author = "Benjamin Higgins"
+github = "bhigginsuk"
