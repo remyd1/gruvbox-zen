@@ -1,21 +1,11 @@
 @import "colors";
 
-@font-face {
-    font-family: 'Iosevka';
-    src: url("/fonts/iosevka-regular.woff2"),
-        url("/fonts/iosevka-italic.woff2"),
-        url("/fonts/iosevka-bold.woff2"),
-        url("/fonts/iosevka-bolditalic.woff2");
-}
-
-$font: "Iosevka", sans-serif;
-$font-mono:  "Iosevka", monospace;
 $padding: 8px;
 
 body {
-    font: 100% $font;
-    background: $black;
-    color: $white;
+    font: 100%;
+    background: $gb-dm-bg0-hard;
+    color: $gb-dm-fg1;
 }
 
 body {
@@ -37,6 +27,26 @@ header {
     align-items: center;
 }
 
+.title {
+    color: $gb-dm-dark-yellow;
+}
+
+.logo {
+    color: $gb-dm-light-orange;
+    text-decoration: none;
+    font-size: none;
+}
+
+@mixin subheadings {
+  h1, h2, h3, h4, h5, h6 {
+    @content;
+  }
+}
+
+@include subheadings {
+    color: $gb-dm-light-yellow;
+}
+
 main {
     padding: $padding;
     grid-area: main;
@@ -47,7 +57,7 @@ p {
 }
 
 footer {
-    color: $gray_light;
+    color: $gb-dm-fg2;
     padding: 0 $padding $padding $padding;
 
     grid-area: footer;
@@ -74,16 +84,16 @@ ul {
 }
 
 li::marker {
-    color: $green;
+    color: $gb-dm-light-yellow;
 }
 
 ul ul {
     padding-left: 1em;
 }
 
-a {
+a:not(.logo) {
     font-size: none;
-    color: $blue;
+    color: $gb-dm-light-blue;
     text-decoration: none;
 }
 
@@ -125,12 +135,12 @@ pre {
 }
 
 code {
-    font: 16px $font-mono;
+    font: 16px //$font-mono;
 }
 
 p > code {
     font-weight: bold;
-    color: $gray;
+    color: $gb-dm-fg0;
 }
 
 .logo {
@@ -139,12 +149,12 @@ p > code {
 }
 
 .date {
-    color: $gray_light;
+    color: $gb-dm-dark-gray;
     font-size: 14px;
 }
 
 .border {
-    color: $gray_dark;
+    color: $gb-dm-light-gray;
     margin: 8px 0 8px 0;
     border-top: 2px dashed;
 }
