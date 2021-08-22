@@ -93,7 +93,7 @@
                         {% for page in subsection.pages %}
                         <li>
                         <a href="{{ page.permalink | safe}}">
-                            {{ page.title }}
+                            {{ page.date }}: {{ page.title }}
                         </a>
                         </li>
                         {% endfor %}
