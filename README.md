@@ -1,7 +1,7 @@
 # Gruvbox Zen
 
 A [Zola](https://www.getzola.org/) theme forked from [Oceanic
-Zen](https://github.com/bhigginsuk/gruvbox-zen).
+Zen](https://github.com/brhigginsuk/gruvbox-zen).
 
 ## Changes
 - Updated colours, sourced from the [gruvbox theme](https://github.com/morhetz/gruvbox).
@@ -17,13 +17,13 @@ Download theme to your `themes` directory:
 
 ```bash
 $ cd themes
-$ git clone https://github.com/bhigginsuk/gruvbox-zen.git
+$ git clone https://github.com/brhigginsuk/gruvbox-zen.git
 ```
 
 Or add as git submodule
 
 ```bash
-$ git submodule add https://github.com/bhigginsuk/gruvbox-zen.git themes/gruvbox-zen
+$ git submodule add https://github.com/brhigginsuk/gruvbox-zen.git themes/gruvbox-zen
 ```
 
 Enable it in your `config.toml`:
