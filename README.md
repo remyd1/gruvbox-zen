@@ -1,7 +1,7 @@
 # Gruvbox Zen
 
-A [Zola](https://www.getzola.org/) theme forked from [Oceanic
-Zen](https://github.com/brhigginsuk/gruvbox-zen).
+A gruvbox [Zola](https://www.getzola.org/) theme forked from [Oceanic
+Zen](https://github.com/barlog-m/oceanic-zen).
 
 ## Changes
 - Updated colours, sourced from the [gruvbox theme](https://github.com/morhetz/gruvbox).
