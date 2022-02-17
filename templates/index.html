@@ -64,6 +64,27 @@
                             </a>
                         </li>
                         {% endif %}
+                        {% if config.extra.gitlab %}
+                        <li class="nav">
+                            <a itemprop="url" href="https://gitlab.com/{{ config.extra.gitlab }}">
+                                <img class="icon" src="{{ config.base_url }}/icons/gitlab.svg" alt="Gitlab">
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if config.extra.gitlab_hosted %}
+                        <li class="nav">
+                            <a itemprop="url" href="{{ config.extra.gitlab_hosted }}">
+                                <img class="icon" src="{{ config.base_url }}/icons/gitlab_hosted.svg" alt="Gitlab Hosted">
+                            </a>
+                        </li>
+                        {% endif %}
+                        {% if config.extra.stackoverflow_id %}
+                        <li class="nav">
+                            <a itemprop="url" href="https://stackoverflow.com/users/{{ config.extra.stackoverflow_id }}">
+                                <img class="icon" src="{{ config.base_url }}/icons/stackoverflow.svg" alt="Stackoverflow">
+                            </a>
+                        </li>
+                        {% endif %}
                         {% if config.extra.pgp %}
                         <li class="nav">
                             <a itemprop="url" href="{{ config.extra.pgp }}">

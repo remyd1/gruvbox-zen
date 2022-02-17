@@ -45,4 +45,7 @@ sourcehut = "sourcehut author name"
 email = "author email address"
 rss = "RSS file name (atom.xml by default)"
 pgp = "PGP key file name"
+gitlab = "gitlab account name"
+gitlab_hosted = "URL to a profile on a hosted gitlab"
+stackoverflow_id = "<number>" # shuld match a user id on stackoverflow.
 ```
