@@ -136,6 +136,7 @@
                 </small>
                 <small class="footer-right">
                     Powered by <a href="https://www.getzola.org">Zola</a> | Theme <a href="https://github.com/brhigginsuk/gruvbox-zen">Gruvbox Zen</a>
+                    {% if config.extra.mastodon %}<div class="masto"><a rel="me" href="{{ config.extra.mastodon }}">Mastodon</a></div>{% endif %}
                 </small>
             </div>
         {% endblock footer %}
